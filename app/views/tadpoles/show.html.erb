@@ -4,9 +4,8 @@
   <!-- make form to make "Become a frog" button here -->
   <!-- the form should post to /tadpoles/:id/metamorphose -->
 
-<%= form_for(@tadpole, url: {action: "metamorphose"}, method: :post) do |f| %>
-    <%= f.submit "Become a frog"%>
-  <% end %>
+
+  <%= button_to "Become a frog", action: "metamorphose" %>
 
 
   <p>Color: <%= @tadpole.color %></p>
